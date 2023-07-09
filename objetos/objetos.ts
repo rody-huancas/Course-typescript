@@ -43,3 +43,17 @@ type HexadecimalColor = `#${string}`;
 // const color: HexadecimalColor = "0033ff"; //-> genera un error ya que en la plantilla decimos que tiene que llevar almuadilla
 
 const color2: HexadecimalColor = "#0033ff"; // con el formato definido
+
+// ----------------------
+// UNION TYPES
+
+// es como si este typo será unca cadena con el valor local o => "|" o planetary o galactic o universal
+type HeroPowerScale = "local" | "planetary" | "galactic" | "universal";
+
+// definiendo una variable sería
+let prueba: number | string; // la variable prueba puede ser un numero o un string
+
+prueba = "pruebita";
+// prueba = true; //error, porque hemos dicho que puede ser solo number o string
+
+console.log(prueba);
